@@ -18,16 +18,15 @@ Ao final deve se exibir uma mensagem:
 */
                           
 let heroi = "chuchu" 
-let saldo = saldoRankeadas(98,8)
+let saldo = calcularSaldoRankeadas(98,8)
 
 console.log("o numero de vitorias subtraido pelo numero de derrotas resulta em um saldo de " + saldo + " pontos")
 
-function saldoRankeadas(vitoria,  derrota) {
+function calcularSaldoRankeadas(vitoria,  derrota) {
     let  calculo = vitoria - derrota
           return calculo
     
 }
-
 
 
 if (saldo < 10){
@@ -53,8 +52,6 @@ else {
         nivel ="Imortal"
     }
  
-
-
 console.log("O heroi de nome " + heroi +  " tem saldo de " + saldo + " pontos" + " e está no nivel " + nivel)
 
 
